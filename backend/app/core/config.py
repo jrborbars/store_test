@@ -3,7 +3,8 @@ from starlette.config import Config
 from starlette.datastructures import Secret
 
 config = Config(".env")
-print(str(config))
+
+
 PROJECT_NAME = "Store_API"
 VERSION = "0.1.0"
 API_PREFIX = "/api"

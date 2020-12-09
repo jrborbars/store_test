@@ -7,7 +7,7 @@ RUN set -eux \
   && apk add --no-cache --virtual .build-deps build-base \
      libressl-dev libffi-dev gcc musl-dev python3-dev \
      libc-dev libxslt-dev libxml2-dev bash \
-     postgresql-dev \
+     postgresql-dev nano \
   && pip install --upgrade pip setuptools wheel \
   && pip install uvicorn fastapi pydantic email_validator \
   && pip install databases[postgresql] psycopg2 alembic sqlalchemy \
