@@ -10,6 +10,7 @@ RUN set -eux \
      postgresql-dev \
   && pip install --upgrade pip setuptools wheel \
   && pip install uvicorn fastapi pydantic email_validator \
+  && pip install databases[postgresql] psycopg2 alembic sqlalchemy \
   && pip install -r /backend/requirements.txt \
   && rm -rf /root/.cache/pip
 COPY . /backend
